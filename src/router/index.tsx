@@ -6,6 +6,7 @@ import { ContractPage } from "../pages/contract"
 import { DashboardPage } from "../pages/dashboard"
 import { Layout } from "../layouts"
 import { NotFoundPage } from "../pages/notfound"
+import StateExcercisePitfall from "../pages/excercise3"
 
 export const AppRouters = () => {
     return (
@@ -16,6 +17,7 @@ export const AppRouters = () => {
                 <Route path="/blog" element={<BlogPage />} >
                     <Route path=":id" element={<BlogTextPage />} />
                 </Route>
+                <Route path="/ex3" element={<StateExcercisePitfall />} />
                 {/* <Route path="/blog/:id" element={<BlogDetailPage />} /> */}
 
                 <Route path="/dashboard" element={<DashboardPage />} >
