@@ -7,6 +7,8 @@ import { DashboardPage } from "../pages/dashboard"
 import { Layout } from "../layouts"
 import { NotFoundPage } from "../pages/notfound"
 import StateExcercisePitfall from "../pages/excercise3"
+import { Litting } from "../pages/litting"
+import { HookPage } from "../pages/hook"
 
 export const AppRouters = () => {
     return (
@@ -26,6 +28,8 @@ export const AppRouters = () => {
                 </Route>
 
                 <Route path="/contract" element={<ContractPage />} />
+                <Route path="/hook" element={<HookPage />} />
+                <Route path="/litting" element={<Litting />} />
                 <Route path="/donoclick" element={<Navigate to={"/"} state={'From About Page Do Not Click'} />} />
 
                 <Route path="*" element={<NotFoundPage />} />
